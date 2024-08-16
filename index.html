@@ -148,190 +148,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>listing tags</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
+  <style>
+    /* * {
+      color: green;
+    } */
+
+    h1 {
+      color: red;
+    }
+
+    #uniq h2 {
+      color: orange;
+    }
+
+    #uniq h3 {
+      color: aqua;
+    }
+
+    #uniq h4,
+    #uniq h5 {
+      color: purple;
+    }
+
+    .bx {
+      color: firebrick;
+    }
+  </style>
 
   <body>
-    <h1> My hobbies (Unordered list)</h1>
-    <ul>
-      <li>Playing football </li>
-      <li>Swimming</li>
-      <li>Playing Cricket</li>
-      <li>watching movies</li>
-    </ul>
-    <br>
-    <h1>Sports(order list)</h1>
-    <ol>
-      <li>Basketball</li>
-      <li>Cricket</li>
-      <li>football</li>
-    </ol>
-    <br>
-    <strong> strong tag makes text bold</strong>
-    <br><br>
-    <img src="images/nepalflag.jpg" alt="nepalflag">
-    <br><br>
-    <a href="contact.html">contact me</a>
-    <br><br>
-    <a href="https://www.espncricinfo.com/">espncricinfo</a>
-    <br><br>
-    <table border="2px" cellspacing="0px" cellpading="2px">
-      <th>programming language</th>
-      <th>Remarks</th>
-      <tr>
-        <td>java</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>javascript</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>c programming</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>python</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-    </table><br>
-    <table border="2px" cellspacing="0px" cellpading="2px">
-      <thead>
-        <th>programming language</th>
-        <th>Remarks</th>
-      </thead>
-      <tr>
-        <td>java</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>javascript</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>c programming</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>python</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tfoot>
-        <tr>
-          <td>Overall</td>
-          <td>Excellent</td>
+    <header>
+      <h1>website</h1>
+    </header>
+    <hr>
+    <div id="uniq">
+      <h2>unique id</h2>
+      <h3>inside </h3>
+      <h4>combined</h4>
+      <h5>together</h5>
+    </div>
+    <hr>
+    <div class="bx">
+      <h3>box content</h3>
+    </div>
 
-        </tr>
 
-      </tfoot>
-    </table>
-    <br>
-    <table border="2px" cellspacing="0px">
-      <b>Marksheet</b>
-      <thead>
-        <th>Subject</th>
-        <th>Marks obtained</th>
-        <th>Grade</th>
-        <th>Remarks</th>
-      </thead>
-      <tr>
-        <td>Math</td>
-        <td>95</td>
-        <td>A <sup>+</sup></td>
-        <td>Excellent</td>
-      </tr>
-      <tr>
-        <td>Science</td>
-        <td>89</td>
-        <td>A</td>
-        <td>Very Good</td>
-      </tr>
-      <tr>
-        <td>English</td>
-        <td>93</td>
-        <td>A <sup>+</sup></td>
-        <td>Excellent</td>
-      </tr>
-      <tr>
-        <td>Social</td>
-        <td>80</td>
-        <td>A </td>
-        <td>Very Good</td>
-      </tr>
-      <tr>
-        <td>Nepali</td>
-        <td>75</td>
-        <td>B <sup>+</sup></td>
-        <td>Good</td>
-      </tr>
-      <tr>
-        <td>C programming</td>
-        <td>90</td>
-        <td>A <sup>+</sup></td>
-        <td>Excellent</td>
-      </tr>
-      <tfoot>
-        <tr>
-          <td>Overall</td>
-          <td colspan="3" text align="center"> Excellent</td>
-        </tr>
-      </tfoot>
-
-    </table>
-    <fieldset>
-      <legend>some information</legend>
-      <form action="mailto:kunwarmandip3@gmail.com" method="post" enctype="text/plain">
-        <p>
-          <label for="Username">Username</label>
-          <input type="text" id="Username" placeholder="Username" name="Username">
-        </p>
-        <p>
-          <label for="Username">Password</label>
-          <input type="password" id="password" placeholder="password" name="password">
-        </p>
-        <p>
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="your email address" name="email">
-        </p>
-        <p>
-          <label for="bdate">D.O.B</label>
-          <input type="date" id="bdate" name="D.O.B" value="bdate">
-        </p>
-        <h3>Select your gender</h3>
-        <p>
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="male" value="male">
-          <label for="female">Female</label>
-          <input type="radio" name="gender" id="female" value="female">
-          <label for="Other">Other</label>
-          <input type="radio" name="gender" id="Other" value="Other">
-        </p>
-        <h3>Select your hobbies</h3>
-        <p>
-          <label for="Playing Football">Playing Football</label>
-          <input type="checkbox" value="Playing Football" name="Hobbies" id="Playing Football">
-          <label for="Singing">Singing</label>
-          <input type="checkbox" value="Singing" name="Hobbies" id="Singing">
-          <label for="Swimming">Swimming</label>
-          <input type="checkbox" value="Playing Football" name="Hobbies" id="Swimming">
-
-        </p>
-        <p>
-          <select name="country" id="country">
-            <option value="nepal">nepal</option>
-            <option value="china">china</option>
-            <option value="india">india</option>
-          </select>
-          <br>
-        <p>
-          <label for="text">Textarea</label>
-        </p>
-        <textarea name="text" id="text" cols="20" rows="10">hello good morning</textarea>
-        <br>
-
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-      </form>
-    </fieldset>
   </body>
 
 </html>
