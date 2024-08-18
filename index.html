@@ -175,6 +175,42 @@
     .bx {
       color: firebrick;
     }
+
+    p:hover {
+      color: red;
+    }
+
+    li:nth-child(2n+1) {
+      color: red;
+    }
+
+    p::before {
+      content: 'lorem';
+      font-size: 20px;
+      color: blue;
+    }
+
+    p::after {
+      content: 'lorem';
+      font-size: 20px;
+      color: blue;
+    }
+
+    span {
+      color: red;
+    }
+
+    img[alt="some"] {
+      border-radius: 50%;
+    }
+
+    input[type='text']:focus {
+      background-color: red;
+    }
+
+    input[type='date']:focus {
+      background-color: red;
+    }
   </style>
 
   <body>
@@ -182,6 +218,8 @@
       <h1>website</h1>
     </header>
     <hr>
+    <input type="text" placeholder="hello">
+    <input type="date" placeholder="hello">
     <div id="uniq">
       <h2>unique id</h2>
       <h3>inside </h3>
@@ -193,7 +231,16 @@
       <h3>box content</h3>
     </div>
 
-
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span>Omnis iste dolore consequuntur inventore</span>
+      cum deleniti expedita illo nemo! Excepturi, cumque?</p>
+    <li>this is first child</li>
+    <li>this is first child</li>
+    <li>this is first child</li>
+    <li>this is first child</li>
+    <br><br>
+    <img src="/images/nepalflag.jpg" alt="some" height="100px" width="100px">
+    <br><br>
+    <img src="/images/nepalflag.jpg" alt="design" height="100px" width="100px">
   </body>
 
 </html>
