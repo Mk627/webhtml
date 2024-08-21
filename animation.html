@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+      div {
+        width: 50px;
+        height: 50px;
+        background-color: rebeccapurple;
+        animation: hello;
+        animation-duration: 10s;
+        position: relative;
+
+      }
+
+      #b1 {
+        animation-timing-function: linear;
+      }
+
+      #b2 {
+        animation-timing-function: ease;
+      }
+
+      #b3 {
+        animation-timing-function: ease-in;
+      }
+
+      #b4 {
+        animation-timing-function: ease-out;
+      }
+
+      #b5 {
+        animation-timing-function: ease-in-out;
+      }
+
+
+      @keyframes hello {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+
+        20% {
+          top: 0px;
+          left: 800px;
+        }
+
+        40% {
+          top: 300px;
+          left: 800px;
+        }
+
+        60% {
+          top: 300px;
+          left: 0px;
+        }
+
+        80% {
+          top: 0px;
+          left: 0px;
+        }
+
+        100% {
+          top: 0px;
+          left: 40px;
+        }
+
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="b1" style="display: inline-block;">H</div>
+    <div id="b2" style="display: inline-block;">E</div>
+    <div id="b3" style="display: inline-block;">L</div>
+    <div id="b4" style="display: inline-block;">L</div>
+    <div id="b5" style="display: inline-block;">O</div>
+  </body>
+
+</html>
