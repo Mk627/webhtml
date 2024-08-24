@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Cards</title>
+    <style>
+      * {
+        box-sizing: b;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        border: 1px solid black;
+        max-width: 900px;
+        min-height: 500px;
+        background-color: burlywood;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+      }
+
+      .containeer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        width: 250px;
+        height: 400px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+      }
+
+      .card img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .card h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>CSS Flexbox Cards</h1>
+      <div class="containeer">
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+            alt="Angular">
+          <h2>Angular</h2>
+          <p>Angular is a platform for building mobile and desktop web applications. Join the community of millions of
+            developers who build compelling user interfaces with Angular.</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1MndL-Xp1JcnqaB0YOqTp6zDjrwYyGKsPA&s"
+            alt="React">
+          <h2>React</h2>
+          <p>React is an open-source, front-end JavaScript library for building user interfaces or UI components. It is
+            maintained by Facebook and a community of individual developers and companies.</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRLVaPhBNOB77faiQJu1EBD1kRWNu4xLgkiw&s"
+            alt="Vue">
+          <h2>Vue</h2>
+          <p>Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is
+            designed from the ground up to be incrementally adoptable.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>
